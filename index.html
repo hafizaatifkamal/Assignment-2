@@ -18,10 +18,10 @@
     <div class="container right">
         <form class="form-box" action="#" method="POST">
             <label for="username"><b>Username</b></label>
-            <input type="text" name="username" required>
+            <input type="text" name="username" minlength="5" maxlength="10" required>
 
             <label for="psw"><b>Password</b></label>
-            <input type="password" name="psw" required>
+            <input type="password" name="psw" minlength="10" maxlength="15" required>
 
             <input type="checkbox" name="remember">
             <label for="remember">Remember me</label><br><br>
