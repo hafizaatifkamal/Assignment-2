@@ -19,10 +19,13 @@ body {
 
 .left {
     left: 0;
+    display: flex;
 }
 
 .right {
+    margin-top: 10rem;
     right: 0;
+    display: flex;
 }
 
 .image-box img {
@@ -71,15 +74,18 @@ input[type=checkbox] {
 }
 
 @media screen and (max-width: 600px) {
-    .container {
-        width: 50%;
-        height: 50%;
-        
+    .left {
+        width: 100%;
+        margin-top: 5%;
+        float: left;
+        flex-direction: column-reverse;
     }
-}
 
-.container:after {
-    content: "";
-    display: table;
-    clear: both;
+    .container {
+        width: 100%;
+    }
+
+    .right {
+        margin-top: 0;
+    }
 }
